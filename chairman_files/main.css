@@ -100,10 +100,10 @@ margin: 0 auto;
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Life"; }
+  content: "已搬砖数"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "搬砖大王"; }
 
 p {
   margin-top: 0;
