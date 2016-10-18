@@ -55,16 +55,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[2] = "班组头目"
   text[3] = "现场督工"
   text[4] = "工程师"
-  text[5] = "现场经理"
-  text[6] = "施工经理"
-  text[7] = "项目经理"
-  text[8] = "高级PM"
-  text[9] = "项目代表"
-  text[10] = "公司董事"
-  text[11] = "总部高管"
-  text[12] = "党委书记"
-  text[13] = "住建部长"
-  text[14] = "国家主席"
+
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -75,7 +66,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
-  if (tile.value > 2048) classes.push("tile-super");
+  if (tile.value > 16) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
