@@ -161,7 +161,7 @@ HTMLActuator.prototype.clearMessage = function () {
 HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
+  tweet.setAttribute("href", "weixin://dl/moments");
   tweet.setAttribute("data-via", "aenonsun");
   tweet.setAttribute("data-url", "http://hahagame.github.io/ha");
   tweet.setAttribute("data-counturl", "http://hahagame.github.io/ha");
