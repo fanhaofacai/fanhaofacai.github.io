@@ -158,18 +158,3 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-over");
 };
 
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "weixin://dl/moments");
-  tweet.setAttribute("data-via", "aenonsun");
-  tweet.setAttribute("data-url", "http://hahagame.github.io/ha");
-  tweet.setAttribute("data-counturl", "http://hahagame.github.io/ha");
-  tweet.textContent = "Tweet";
-
-  var text = "干完这场我就回家结婚 " + this.score + " 好好干新加坡政策说不定哪天就好了！！ " +
-             "一定不能请假辞职！没有我南洋就要倒闭！";
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
-};
