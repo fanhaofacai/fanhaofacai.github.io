@@ -62,7 +62,10 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[9] = "项目代表"
   text[10] = "公司董事"
   text[11] = "总部高管"
-
+  text[12] = "住建部长"
+  text[13] = "中共常委"
+  text[14] = "国家主席"
+  
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
